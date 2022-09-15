@@ -36,7 +36,12 @@ body {
 .presentation {
     margin-top: 1em;
     background: url(../img/background.png) center fixed;
-    padding: 10% 0;
+    padding: 13% 0;
+}
+
+.presentation h1 {
+    text-shadow: 3px 5px 4px #000;
+    font-weight: bold;
 }
 
 .btn {
