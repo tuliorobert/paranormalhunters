@@ -12,7 +12,7 @@ body {
 }
 
 .preload {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -65,4 +65,49 @@ body {
 .information i {
     font-size: 2.5em;
     margin-bottom: 1rem;
+}
+
+.paranormal-academy {
+    background: url(../img/pentagram.png) center;
+    padding: 5em;
+    margin: 2em;
+}
+
+.academy {
+    background-image: url(../img/pentagram.png);
+    font-weight: bold;
+}
+
+.registration {
+    margin: 5em 10rem;
+    padding: 1rem;
+    background-color: rgba(87, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.academy-logo {
+    margin: auto;
+    display: block;
+}
+
+.registration input, .registration select, .registration option {
+    font-weight: bold;
+}
+
+.registration button {
+    display: block;
+    margin: auto;
+    margin-top: 2em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 700px) {
+    .registration {
+        margin: 0;
+    }
+
+    .paranormal-academy {
+        margin: 0;
+    }
 }
