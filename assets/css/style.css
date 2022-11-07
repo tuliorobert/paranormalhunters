@@ -28,20 +28,33 @@ body {
     opacity: 0;
 }
 
-.navbar-brand {
-    display: flex;
-    justify-content: center;
+.navbar {
+    padding: 1em;
 }
 
 .presentation {
-    margin-top: 1em;
-    background: url(../img/background.png) center fixed;
-    padding: 13% 0;
+    background: url(../img/school.webp) fixed no-repeat;
+    height: 100vh;
+    font-weight: bold;
+    padding-top: 30vh;
 }
 
 .presentation h1 {
-    text-shadow: 3px 5px 4px #000;
     font-weight: bold;
+    text-shadow: 3px 5px 4px #000;
+    animation: fadeIn 2s;
+    animation-delay: 3.5s;
+}
+
+.presentation h3, .presentation h4 {
+    animation: fadeIn 4s;
+    animation-delay: 3.5s;
+}
+
+.presentation a {
+    margin-top: 2em;
+    animation: fadeIn 4s;
+    animation-delay: 3.5s;
 }
 
 .btn {
@@ -57,14 +70,21 @@ body {
     color: #000;
 }
 
-.information {
-    margin-top: 2.5em;
-    padding: 2em;
+.information .d-flex {
+    padding: 0.8em;
+}
+
+.information .flex-row-reverse {
+    background-color: #020202;
 }
 
 .information i {
     font-size: 2.5em;
     margin-bottom: 1rem;
+}
+
+.col-md-6 {
+    margin: 1em;
 }
 
 /* Racing */
@@ -106,5 +126,9 @@ body {
 @media screen and (max-width: 700px) {
     .racing-main form {
         margin: 0;
+    }
+
+    .information {
+        padding: 0;
     }
 }
