@@ -2,7 +2,7 @@
 @import url(./animations.css);
 
 body {
-    background-color: #000;
+    background: linear-gradient(0deg, rgba(5,5,5,1) 0%, rgba(0,0,0,1) 100%);
     color: #fff;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -62,7 +62,7 @@ body {
     border: 0.5px solid #fff;
     border-radius: 10px;
     vertical-align: top;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .btn:hover {
@@ -74,10 +74,6 @@ body {
     padding: 0.8em;
 }
 
-.information .flex-row-reverse {
-    background-color: #020202;
-}
-
 .information i {
     font-size: 2.5em;
     margin-bottom: 1rem;
@@ -85,6 +81,77 @@ body {
 
 .col-md-6 {
     margin: 1em;
+}
+
+.card1, .card2, .card3 {
+    opacity: 0;
+}
+
+.card-visible {
+    opacity: 1;
+    animation: fadeIn 1s;
+}
+
+.paranormal-bot {
+    opacity: 0;
+}
+
+.paranormal-bot h1 {
+    margin-top: 1em;
+}
+
+.paranormal-bot-visible {
+    opacity: 1;
+    animation: fadeIn 1s;
+}
+
+.paranormal-bot video {
+    width: 100%;
+}
+
+.call-to-action {
+    padding: 5em 0;
+    background-color: #0e0e0e;
+}
+
+.call-to-action a {
+    margin-top: 1em;
+}
+
+.top-button {
+    font-size: 70px;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    opacity: 0;
+}
+
+.top-button-visible {
+    opacity: 1;
+    animation: fadeIn 1s;
+}
+
+.top-button:hover {
+    cursor: pointer;
+    color: #e3e3e3;
+}
+
+.footer {
+    background-color: #000;
+}
+
+.social a {
+    font-size: 23px;
+    color: #fff;
+    margin: 0 0.2em;
+}
+
+.social a:hover {
+    color: #e3e3e3;
+}
+
+.footer p {
+    margin: 0;
 }
 
 /* Racing */
